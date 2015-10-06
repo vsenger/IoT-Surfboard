@@ -20,8 +20,8 @@ import org.surfthing.Service;
 public abstract class MQTTBaseService extends Service {
 
     public String MQTT_SERVER = "tcp://iot.eclipse.org:1883";
-    public String MQTT_QUEUE = "globalcode/things";
-    public String LOG_QUEUE = MQTT_QUEUE + "/log";
+    public String MQTT_QUEUE = "";
+    public String LOG_QUEUE = "";
 
     @Override
     public void start() {
