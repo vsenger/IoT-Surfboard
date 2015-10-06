@@ -30,7 +30,7 @@ public class Kernel {
 
     @Inject
     public Camera camera;
-    
+
     //para uso em Java SE
     public static String DEVICE_NAME = "Surfing IoT Gateway";
     public static String APP_NAME = "Surfing IoT Gateway";
@@ -65,6 +65,15 @@ public class Kernel {
 
     public Camera getCamera() {
         return camera;
+    }
+
+    public Service getService(Class c) {
+        for (Service s : services) {
+            if (s.getClass().equals(c)) {
+                return s;
+            }
+        }
+        return null;
     }
 
     public void changeMode() {
