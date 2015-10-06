@@ -16,7 +16,7 @@ import org.surfthing.Kernel;
  */
 public class WatchDog extends MQTTBaseService {
 
-    public String WATCHDOG_QUEUE = MQTT_QUEUE + "/devices";
+    public String WATCHDOG_QUEUE = "";
 
     @Override
     public void start() {
